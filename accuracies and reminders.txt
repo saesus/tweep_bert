@@ -1,0 +1,21 @@
+tweep
+mcc = 0.7611319189196188
+tweep 2 
+mcc = 0.7788547563465242
+tweep 2 (adamw)
+mcc = 0.760880903685663
+tweep new hyperparameter
+mcc = 0.7427968315969053
+tweep mini
+mcc = 0.7646406526810398
+tweep fullfat
+mcc = 0.7639678218913969
+
+
+GLTR doesnt work with certain special characters
+
+
+add some extra parameters for capital letters, special character
+
+https://medium.com/distributed-computing-with-ray/hyperparameter-optimization-for-transformers-a-guide-c4e32c6c989b
+https://huggingface.co/transformers/training.html

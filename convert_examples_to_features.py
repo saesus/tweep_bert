@@ -1,3 +1,5 @@
+import re
+
 class InputFeatures(object):
     """A single set of features of data."""
 
@@ -61,6 +63,13 @@ def convert_example_to_feature(example_row):
     input_ids += padding
     input_mask += padding
     segment_ids += padding
+
+    pattern = r'[^a-zA-Z0-9\_]'
+    pattern2 = r'[A-Z]'
+    input_ids = input_ids[:-2]
+    input_ids.append(int(len(re.findall(pattern2, example.text_a))))
+    input_ids.append(int(len(re.findall(pattern, example.text_a))))
+
 
     assert len(input_ids) == max_seq_length
     assert len(input_mask) == max_seq_length

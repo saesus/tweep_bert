@@ -1,0 +1,7 @@
+task = tweep_fullfat
+mcc = 0.7639678218913969
+tp = 1192
+tn = 1059
+fp = 219
+fn = 88
+eval_loss = 0.2502787852485199
